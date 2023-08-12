@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from '../assets/logo.png'
 
 import CustomButton from "./CustomButton";
 
@@ -9,7 +10,7 @@ const Navbar = () => {
     <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent'>
       <Link href='/' className='flex justify-center items-center'>
         <Image
-          src='/logo.svg'
+          src={logo}
           alt='logo'
           width={118}
           height={18}

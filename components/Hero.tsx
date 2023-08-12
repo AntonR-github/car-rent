@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import CustomButton from "./CustomButton"
+import carHero from '../assets/heroCar.png'
 
 const Hero = () => {
 
@@ -18,7 +19,7 @@ const Hero = () => {
 
                 <p className="hero__subtitle">
                     We have the best cars for you to rent, book or buy. Check
-                    out our offers.!
+                    out our offers!
                     Streamline your process and save time with our car rental!
                 </p>
 
@@ -30,7 +31,7 @@ const Hero = () => {
             </div>
             <div className="hero__image-container">
                 <div className="hero__image">
-                    <Image src='/hero.png' alt="hero" fill
+                    <Image src={carHero} alt="hero" fill
                         className="object-contain" />
                         <div className="hero__image-overlay" />
                 </div>
