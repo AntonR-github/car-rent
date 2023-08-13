@@ -45,8 +45,9 @@ const SearchBar = ({ setManufacturer, setModel } : any) => {
         <div className='searchbar__item'>
           <SearchManufacturer
             selected={searchManufacturer}
-            setSelected={setSearchManufacturer}
-          />
+            setSelected={setSearchManufacturer} manufacturer={""} setManufacturer={function (manufacturer: string): void {
+              throw new Error("Function not implemented.");
+            } } manufacturers={[]}          />
           <SearchButton otherClasses='sm:hidden' />
         </div>
         <div className='searchbar__item'>
